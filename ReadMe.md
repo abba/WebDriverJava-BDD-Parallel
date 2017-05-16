@@ -5,7 +5,7 @@ Maven,
 Java JDK 8,
 Google Chrome,
 
-##Libraries and Frameworks
+Libraries and Frameworks
 Selenium WebDriver
  
 JUnit
@@ -25,7 +25,7 @@ Cucumber Reports
 ###CLI Command: 
 mvn <goal> -P <profile> -D<forNumber.i.e. enough JVMs to Run Tests>
 
-e.g mvn test -P Parallel-Test -Dsurefire.forkNumber=10
+e.g mvn test -P Parallel-Tests -Dsurefire.forkNumber=10
 
 
 **Non - Parallel Tests**
