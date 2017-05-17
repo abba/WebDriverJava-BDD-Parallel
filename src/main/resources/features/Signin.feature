@@ -5,7 +5,7 @@ Feature: Amazon User SignIn
 
   Background: Pre-requisite
     Given User navigates to Amazon
-    Then User should be Amazon page
+    Then User should be on Amazon page
 
   @signUp
   Scenario: Signing in as a valid User

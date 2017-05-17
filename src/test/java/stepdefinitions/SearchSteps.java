@@ -28,7 +28,7 @@ public class SearchSteps  {
        homePage.gotoAmazon();
     }
 
-    @Then("^User should be Amazon page$")
+    @Then("^User should be on Amazon page$")
     public void pageShouldBeAmazon(){
 
         assertThat(
@@ -57,7 +57,7 @@ public class SearchSteps  {
 
     }
 
-    @Then("^No results should returned$")
+    @Then("^No results should be returned$")
     public void noSearchResultReturned(){
 
         assertThat(

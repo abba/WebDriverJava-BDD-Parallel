@@ -6,18 +6,18 @@ Feature: Amazon Search
 
   Background: Pre-requisite
     Given User navigates to Amazon
-    Then User should be Amazon page
+    Then User should be on Amazon page
 
-  Scenario: User searches for valid item
+  Scenario: Searches for valid item
     Given User search for "iPhone"
     Then search results should contains "iPhone"
 
-  Scenario: User searches for an invalid item
+  Scenario: Searches for an invalid item
     Given User search for "adsfsfd"
-    Then No results should returned
+    Then No results should be returned
     And Message "did not match any products" should be displayed
 
-  Scenario: User Search for an item and filters results
+  Scenario: Search for an item and filter results
     Given User search for "iPhone"
     Then search results should contains "iPhone"
     When User Applies Category Filter "Mobile Phones & Smartphones"
